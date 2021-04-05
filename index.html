@@ -7,11 +7,7 @@
     <title>Weather Dashboard</title>
 
     <!-- link to bootstrap -->
-    <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-
+    <link rel ="stylesheet" href="./assests/css/reset.css"/>
     <link rel="stylesheet" href="./assests/css/styles.css" />
 
 </head>
@@ -19,105 +15,48 @@
 
 <body>
     
-    <header>
-        <div class="container h-100">
-            <div class="row align-content-center">
-                <div class="col-12 text-center">
-                    <h1>
-                        Weather Dashboard
-                    </h1>
-                </div>
-            </div>
-        </div>
+    <!-- header for the page -->
+    <header class="parent-row justify-content-center">
+        <h1>
+            Weather Dashboard
+        </h1>
     </header>
 
-    <aside class= "container">
+    <!-- side bar for search box and button + the search histroy -->
+    <aside class="parent-col w-25 m-0 h-100">
 
-        <section class="row flex-column">
-            <h2>
-                search section
-            </h2>
-
-            <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="cityInput" placeholder="London">
-                </div>
+        <!-- search box and button section -->
+        <section >
+            <h5 class="p-s">Search a city here</h5>
+            <form class="p-s">
+                <input type="text"  id="cityInput" placeholder="Enter location here.">
             </form> 
+            <button type="button" class="p-s">Search</button>
 
-            <button type="button" class="btn btn-primary">Search</button>
+            <!-- search history section -->
+            <section>
+                <h3 class="p-s">
+                    Search History
+                </h3>
+            </section>
         </section>
 
-        <section class="row">
-            <h3>
-                Search History
-            </h3>
-        </section>
+
+
     </aside>
 
-    <main class="container">
-        <article class="row">
-            main weather details
+    <!-- main content holds current weather details and 5 day forcast -->
+    <main class="parent-row">
+
+        <!-- main weather details -->
+        <article >
         </article>
 
-        <section class="row">
-            5 day forcast section
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-
-
-
-
+        <!-- 5 day forcast section -->
+        <section >
         </section>
 
     </main>
-
-    
-
-
 
     <!-- imports jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

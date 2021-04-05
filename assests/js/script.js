@@ -18,3 +18,14 @@ function getWeather(location,unitOfMeasure){
 
 
 getWeather();
+
+
+//create object to store search results and save it to local storage.
+
+//create forcast fetch.
+
+//figure out how to use the navigate.geolocate api to auto generate location data.
+
+//manipulate the string that the fetch uses based on the search results.
+
+//

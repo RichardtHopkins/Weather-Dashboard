@@ -1,0 +1,50 @@
+body{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+        
+}
+
+.parent-col{
+    display:flex;
+    flex-direction:column ;
+    flex: 0 1 100%;
+    position: relative;
+    padding:0.5rem;
+}
+
+.parent-row{
+    display:flex;
+    flex-direction:row;
+    flex: 0 1 100%;
+    position: relative;
+    padding:0.5rem
+}
+
+.p-s{
+    padding:0.3rem;
+}
+
+.p-m{
+    padding:0.6rem;
+}
+
+.p-l{
+    padding:1rem;
+}
+
+.justify-content-center{
+    justify-content:center;
+}
+
+.w-25{
+    max-width: 25%;
+}
+
+.h-100{
+    min-height: 100%;
+}
+
+aside{
+    margin: 0;
+}
