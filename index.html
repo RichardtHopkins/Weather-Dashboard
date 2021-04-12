@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
 
+    <!-- links to font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <!-- reset.css -->
     <link rel ="stylesheet" href="./assests/css/reset.css"/>
+    <!-- styles.css -->
     <link rel="stylesheet" href="./assests/css/styles.css" />
 
 </head>
-
 
 <body>
     
@@ -22,47 +24,45 @@
             Weather Dashboard
         </h1>
     </header>
-
     <!-- side bar for search box and button + the search histroy -->
-    <main class="parent-row h-75">
-        <aside class="parent-col align-items-center w-25">
+    <main class="parent-row h-90 p-0">
+
+        <aside class="parent-col justify-content-start  w-25">
 
             <!-- search box and button section -->
-            
-            <h5 class="p-s">Search a city here</h5>
-            <form class="p-s">
-                <input type="text" id="cityInput" placeholder="Enter location here.">
-            </form> 
-            <div class="p-s">
-                <button type="button">Search</button>
-            </div>
-            
+            <h5 class="p-s">
+                Search a city here:
+            </h5>
+
+            <!-- search button -->
+            <form class="parent-col p-s h-10">
+                <input type="text" id="cityInput" placeholder="Enter city here">
+                <input type="submit" class="w-25 m-s" id="searchBtn" value="Search"/>
+            </form>    
 
             <!-- search history section -->
-            <section class="parent-col p-0">
-                <h3 class="p-s">
-                    Search History
+            <section class="parent-col p-0" id="searchHistory">
+                <h3 class="heading-search-his p-s">
+                    Search History:
                 </h3>
+
             </section>
-            
-    
+
         </aside>
     
         <!-- main content holds current weather details and 5 day forcast -->
         <section class="parent-row">
     
             <!-- main weather details -->
-            <article >
+            <article>
             </article>
     
             <!-- 5 day forcast section -->
-            <section >
+            <section>
             </section>
     
         </section>
-
     </main>
-
 
     <!-- imports jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

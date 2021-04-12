@@ -1,6 +1,14 @@
+:root{
+
+    --textColour:darkslategrey;
+    --backgroundColour: #E0FFFF;
+
+}
+
+
 *{
     font-family: 'Lexend Deca', sans-serif;
-    color: darkslategray;
+    color: var(--textColour);   
 }
 
 body{
@@ -9,11 +17,11 @@ body{
     flex-direction: column;
     width: 100%;
     height:100%;
-        
+    background-color:var(--backgroundColour);
 }
 
 h1{
-    font-size: 24px;
+    font-size: 30px;
     font-weight:bold;
 }
 
@@ -49,8 +57,29 @@ h1{
     padding:1rem;
 }
 
+.m-0{
+    margin:0;
+}
+
+.m-s{
+    margin:0.3rem;
+}
+
+.m-m{
+    margin:0.6rem;
+}
+
+.m-l{
+    margin:1rem;
+}
+
+
 .justify-content-center{
     justify-content:center;
+}
+
+.justify-content-start{
+    justify-content: flex-start;
 }
 
 .align-items-center{
@@ -77,6 +106,10 @@ h1{
     max-height: 100%;
 }
 
+.h-90{
+    max-height: 90%;
+}
+
 .h-75{
     max-height: 75%;
 }
@@ -94,4 +127,13 @@ h1{
 
 aside{
     margin: 0;
+}
+
+.heading-search-his{
+    padding-left:0;
+    padding-top:1rem;
+}
+
+#searchBtn{
+    margin-left:0;
 }
