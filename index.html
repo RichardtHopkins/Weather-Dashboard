@@ -10,14 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
     <!-- reset.css -->
-    <link rel ="stylesheet" href="./assests/css/reset.css"/>
+    <link rel ="stylesheet" href="./assets/css/reset.css"/>
     <!-- styles.css -->
-    <link rel="stylesheet" href="./assests/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
 </head>
 
 <body>
-    
     <!-- header for the page -->
     <header class="parent-row justify-content-center align-items-center h-10">
         <h1>
@@ -26,13 +25,12 @@
     </header>
     <!-- side bar for search box and button + the search histroy -->
     <main class="parent-row h-90 p-0">
-
-        <aside class="parent-col justify-content-start  w-25">
+        <aside class="parent-col justify-content-start w-25 search">
 
             <!-- search box and button section -->
-            <h5 class="p-s">
+            <h3 class="p-s">
                 Search a city here:
-            </h5>
+            </h3>
 
             <!-- search button -->
             <form class="parent-col p-s h-10">
@@ -45,22 +43,145 @@
                 <h3 class="heading-search-his p-s">
                     Search History:
                 </h3>
-
             </section>
-
         </aside>
     
         <!-- main content holds current weather details and 5 day forcast -->
-        <section class="parent-row">
-    
+        <section class="parent-col">
             <!-- main weather details -->
-            <article>
+            <article class="current-weather justify-content-center m-s h-50">
+
+                <h2 class="m-l" id="cityName">
+                  <span id="weatherIcon"></span>
+                </h2>
+
+                <h3 class="m-l">
+                    Temperature: <span id="temperature"></span>
+                </h3>
+
+                <h3 class="m-l">
+                    Humidity: <span id="humidity"></span>
+                </h3>
+
+                <h3 class="m-l">
+                    Wind: <span id="windSpeed"></span>
+                </h3>
+                <h3 class="m-l">
+                    UV Index: <span id="UV"></span>
+                </h3>
             </article>
     
-            <!-- 5 day forcast section -->
-            <section>
+            <section class="m-l w-100">
+                <h2>
+                    5 Day Forcast:
+                </h2>
             </section>
-    
+            <!-- 5 day forcast section -->
+            <article class="parent-row justify-content-start  m-s h-50">
+
+                <!-- day 1 -->
+                <section class="forcast m-s h-50" id="day1">
+
+                    <h3 class="m-l" id="date1">
+                         
+                    </h3>
+
+                    <h3 class="m-l">
+                        Temp: <span id="Temp1"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        Humidity: <span id="Humidity1"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        wind: <span id="wind1"></span>
+                    </h3>
+
+                </section>
+
+                <!-- day 2 -->
+                <section class="forcast m-s h-50" id="day2">
+
+                    <h3 class="m-l" id="date2">
+                         
+                    </h3>
+
+                    <h3 class="m-l">
+                        Temp: <span id="Temp2"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        Humidity: <span id="Humidity2"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        wind: <span id="wind2"></span>
+                    </h3>
+
+                </section>
+
+                <!-- day 3 -->
+                <section class="forcast m-s h-50" id="day3">
+
+                    <h3 class="m-l" id="date3">
+                         
+                    </h3>
+
+                    <h3 class="m-l">
+                        Temp: <span id="Temp3"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        Humidity: <span id="Humidity3"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        wind: <span id="wind3"></span>
+                    </h3>
+                </section>
+
+                <!-- day 4 -->
+                <section class="forcast m-s h-50" id="day4">
+
+                    <h3 class="m-l" id="date4">
+                         
+                    </h3>
+
+                    <h3 class="m-l">
+                        Temp: <span id="Temp4"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        Humidity: <span id="Humidity4"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        wind: <span id="wind4"></span>
+                    </h3>
+                </section>
+
+                <!-- day 5 -->
+                <section class="forcast m-s h-50" id="day5">
+
+                    <h3 class="m-l" id="date5">
+                         
+                    </h3>
+
+                    <h3 class="m-l">
+                        Temp: <span id="Temp5"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        Humidity: <span id="Humidity5"></span>
+                    </h3>
+
+                    <h3 class="m-l">
+                        wind: <span id="wind5"></span>
+                    </h3>
+                </section>
+
+            </article>
         </section>
     </main>
 
@@ -69,7 +190,7 @@
     <!-- imports moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- link to script.js -->
-    <script src="./assests/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

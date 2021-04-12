@@ -2,9 +2,7 @@
 
     --textColour:darkslategrey;
     --backgroundColour: #E0FFFF;
-
 }
-
 
 *{
     font-family: 'Lexend Deca', sans-serif;
@@ -21,7 +19,17 @@ body{
 }
 
 h1{
-    font-size: 30px;
+    font-size: 35px;
+    font-weight:bold;
+}
+
+h2{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+h3{
+    font-size: 18px;
     font-weight:bold;
 }
 
@@ -72,7 +80,6 @@ h1{
 .m-l{
     margin:1rem;
 }
-
 
 .justify-content-center{
     justify-content:center;
@@ -136,4 +143,44 @@ aside{
 
 #searchBtn{
     margin-left:0;
+}
+
+.forcast{
+    background-color: lightblue;
+    border-radius: 0.5rem;
+    box-shadow: 3px 5px 5px darkgrey;
+    max-width: 18%
+}
+
+.uvExtreme{
+    background-color: #954f71;
+    border-radius: 0.2rem;
+}
+
+.uvVeryHigh{
+    background-color: #d1394a;
+    border-radius: 0.2rem;
+}
+
+.uvHigh{
+    background-color: #ffb301;
+    border-radius: 0.2rem;
+}
+
+.uvMedium{
+    background-color: #fdd835;
+    border-radius: 0.2rem;
+}
+
+.uvLow{
+    background-color: #8dc443;
+    border-radius: 0.2rem;
+}
+
+.search{
+    border-right: .2rem solid grey;
+}
+
+.current-weather{
+    border-bottom: .2rem solid grey;
 }

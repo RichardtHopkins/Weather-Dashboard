@@ -15,7 +15,9 @@ up the weather information for that city and it 5 day forcast.</p>
 
 ## Screenshoot of website:
 
-![image depicting the weather dashboard.](./assets/images/)
+![image depicting the weather dashboard.](./assets/images/dash1.png)
+
+
 
 ***
 
