@@ -22,7 +22,7 @@ var dayE = moment().add(5, 'd').format('D/M/YY')
 
 //gets the weather 
 function getWeather(location){
-    var coordinates = 'http://api.openweathermap.org/data/2.5/weather?q=' + location +'&units=metric&appid=331b26eb68b03536ea7ca4b2ea5009ec';
+    var coordinates = 'https://api.openweathermap.org/data/2.5/weather?q=' + location +'&units=metric&appid=331b26eb68b03536ea7ca4b2ea5009ec';
 
     fetch(coordinates)
         .then(function (response) {
